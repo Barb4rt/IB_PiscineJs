@@ -14,9 +14,11 @@ function twoNumberSum(array, targetSum) {
     }
     if (!result.length > 0) {
         console.log("No solution found... Sorry :(");
+        return false
     }
     result.forEach((element) => {
         console.log(element);
     });
+    return result
 }
 exports.twoNumberSum = twoNumberSum;
