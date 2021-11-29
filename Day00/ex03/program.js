@@ -1,6 +1,6 @@
 function firstNonRepeatingCharacter(string) {
     if (string === "") {
-        console.log("I can't do anything with NOTHING...");
+       return "I can't do anything with NOTHING..."
     }
     string = string.toLowerCase()
     for (let index = 0; index < string.length; index++) {

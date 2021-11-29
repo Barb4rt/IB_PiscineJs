@@ -1,6 +1,6 @@
 function threeLargestNumbers(array) {
     if (array.length <= 3) {
-        console.log("Your array is too small, smart guy ;)");
+       return "Your array is too small, smart guy ;)"
     }
     let result = [];
     for (let index = 0; index < 3; index++) { 
@@ -13,6 +13,4 @@ function threeLargestNumbers(array) {
     console.log(result);
     return result
 }
-
-
 exports.threeLargestNumbers = threeLargestNumbers;

@@ -1,15 +1,13 @@
 function isPalindrome(string) {
     if (string === "") {
-        console.log("I can't do anything with NOTHING...");
+        return "I can't do anything with NOTHING..."
     }
     string = string.toLowerCase()
     stringReversed = [...string].reverse().join('')
     if (string === stringReversed) {
-        console.log(`${string} is a palindrom`);
-        return true
+        return `${string} is a palindrom`
     }
-    console.log(`${string} is not a palindrom`);
-    return false
+    return `${string} is not a palindrom`
 }
 
 exports.isPalindrome = isPalindrome;

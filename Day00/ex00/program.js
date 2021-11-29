@@ -1,6 +1,6 @@
 function twoNumberSum(array, targetSum) {
     if (array.length <= 0) {
-        console.log("Your array is empty, smart guy ;)");
+        return "Your array is empty, smart guy ;)"
     }
     let result = [];
     for (let index = 0; index < array.length - 1; index++) {
@@ -13,8 +13,7 @@ function twoNumberSum(array, targetSum) {
         }
     }
     if (!result.length > 0) {
-        console.log("No solution found... Sorry :(");
-        return false
+        return "No solution found... Sorry :("
     }
     result.forEach((element) => {
         console.log(element);
