@@ -1,5 +1,3 @@
-array = [-50, -13, -2, -1, 0, 0, 1, 1, 2, 3, 19, 20];
-
 function tabTriCarre(array) {
   if (array.length <= 0) {
     return [];
@@ -18,7 +16,4 @@ function tabTriCarre(array) {
   result = result.sort(trieAsc);
   return result;
 }
-
 exports.tabTriCarre = tabTriCarre;
-
-console.log(tabTriCarre(array));
