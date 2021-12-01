@@ -13,7 +13,6 @@ function runLengthEncoding(string) {
       numberOfLetter = numberOfLetter % 9;
       sliced = sliced + `${numberOfLetter}${letter}`;
     }
-    console.log(sliced);
     return sliced;
   };
   while (index < string.length) {

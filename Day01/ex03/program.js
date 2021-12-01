@@ -2,7 +2,6 @@ function runLengthEncoding(string) {
   if (string === "" || !string) {
     return "Your's string is empty, smart guy ;)";
   }
-  string = string.toUpperCase();
   let result = "";
   let letter = string[0];
   let letterNumber = 1;
@@ -19,3 +18,5 @@ function runLengthEncoding(string) {
 }
 
 exports.runLengthEncoding = runLengthEncoding;
+
+console.log(runLengthEncoding("aA"));

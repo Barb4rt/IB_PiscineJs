@@ -4,11 +4,16 @@ function firstDuplicateValue(array) {
       return "Le tableau contient des nombres négatifs ou décimals";
     }
   }
+  let cachedArray = [];
+
   for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    if (array.indexOf(element) !== array.lastIndexOf(element)) {
-      return element;
+    console.log(cachedArray);
+    console.log(cachedArray.indexOf(array[index]));
+    console;
+    if (cachedArray.indexOf(array[index]) != -1) {
+      return array[index];
     }
+    cachedArray.push(array[index]);
   }
   return -1;
 }
